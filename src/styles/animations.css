@@ -1,0 +1,170 @@
+/* Editorial Halftone, Rim Lighting & Motion System */
+
+.editorial-grid-lines {
+  background-image: linear-gradient(
+    90deg,
+    rgba(241, 238, 231, 0.055) 1px,
+    transparent 1px
+  );
+  background-size: 25% 100%;
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.95) 0%,
+    rgba(0, 0, 0, 0.65) 65%,
+    transparent 96%
+  );
+  mask-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.95) 0%,
+    rgba(0, 0, 0, 0.65) 65%,
+    transparent 96%
+  );
+}
+
+@media (max-width: 768px) {
+  .editorial-grid-lines {
+    background-size: 50% 100%;
+  }
+}
+
+/* Halftone dot stipple overlay for the hero portrait */
+.halftone-overlay {
+  background-image: radial-gradient(
+    rgba(241, 238, 231, 0.26) 0.85px,
+    transparent 0.95px
+  );
+  background-size: 3.5px 3.5px;
+  mix-blend-mode: overlay;
+  opacity: 0.42;
+  -webkit-mask-image: radial-gradient(
+    ellipse 58% 60% at 50% 42%,
+    #000 25%,
+    transparent 82%
+  );
+  mask-image: radial-gradient(
+    ellipse 58% 60% at 50% 42%,
+    #000 25%,
+    transparent 82%
+  );
+}
+
+/* Subtle film grain */
+.editorial-grain {
+  background-image: radial-gradient(
+    rgba(255, 255, 255, 0.08) 0.5px,
+    transparent 0.5px
+  );
+  background-size: 4px 4px;
+  opacity: 0.25;
+  pointer-events: none;
+}
+
+/* Seamless portrait mask into #050505 background */
+.portrait-seamless-mask {
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    #000 0%,
+    #000 56%,
+    rgba(0, 0, 0, 0.68) 74%,
+    rgba(0, 0, 0, 0.18) 88%,
+    transparent 98%
+  );
+  mask-image: linear-gradient(
+    to bottom,
+    #000 0%,
+    #000 56%,
+    rgba(0, 0, 0, 0.68) 74%,
+    rgba(0, 0, 0, 0.18) 88%,
+    transparent 98%
+  );
+}
+
+/* Raw uploaded image filter treatment so any user photo matches the monochrome halftone look */
+.portrait-raw-filter {
+  filter: grayscale(100%) contrast(1.28) brightness(0.94);
+}
+
+/* Warm orange rim lighting behind and along upper-right edge of portrait */
+.portrait-rim-glow {
+  background:
+    radial-gradient(
+      circle at 63% 26%,
+      rgba(255, 128, 71, 0.32) 0%,
+      rgba(255, 128, 71, 0.1) 34%,
+      transparent 66%
+    ),
+    radial-gradient(
+      circle at 48% 36%,
+      rgba(241, 238, 231, 0.07) 0%,
+      transparent 58%
+    );
+}
+
+/* Clipped sheen effect on primary capsule CTA */
+.editorial-cta-sheen {
+  position: relative;
+  overflow: hidden;
+}
+
+.editorial-cta-sheen::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(
+    110deg,
+    transparent 30%,
+    rgba(255, 128, 71, 0.18) 48%,
+    transparent 66%
+  );
+  transform: translateX(-115%);
+  transition: transform 0.65s var(--ease-editorial);
+}
+
+@media (hover: hover) and (prefers-reduced-motion: no-preference) {
+  html:not([data-motion='off']) .editorial-cta-sheen:hover::after {
+    transform: translateX(115%);
+  }
+}
+
+/* Scroll line indicator animation */
+@keyframes scroll-pulse {
+  0%,
+  100% {
+    transform: scaleY(1);
+    opacity: 0.75;
+  }
+  50% {
+    transform: scaleY(0.65);
+    opacity: 1;
+  }
+}
+
+.scroll-indicator-line {
+  background: linear-gradient(to bottom, transparent, var(--accent-orange));
+  transform-origin: bottom;
+  animation: scroll-pulse 2.8s ease-in-out infinite;
+}
+
+/* Respect reduced motion and explicit Motion Toggle off state */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  .scroll-indicator-line {
+    animation: none !important;
+  }
+}
+
+html[data-motion='off'] *,
+html[data-motion='off'] *::before,
+html[data-motion='off'] *::after {
+  animation: none !important;
+  transition-duration: 0.01ms !important;
+  scroll-behavior: auto !important;
+}

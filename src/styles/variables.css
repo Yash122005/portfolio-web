@@ -1,0 +1,23 @@
+:root {
+  /* Editorial Color System */
+  --bg-primary: #050505;
+  --bg-secondary: #101010;
+  --bg-elevated: #151413;
+  --text-primary: #F1EEE7;
+  --text-secondary: #A39D94;
+  --text-muted: #756F67;
+  --border-muted: #292724;
+  --border-subtle: rgba(241, 238, 231, 0.09);
+  --accent-orange: #FF8047;
+  --accent-orange-soft: rgba(255, 128, 71, 0.16);
+  --accent-glow: rgba(255, 128, 71, 0.24);
+
+  /* Typography */
+  --font-serif: 'Cormorant Garamond', 'Times New Roman', Georgia, serif;
+  --font-sans: 'Manrope', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: 'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+
+  /* Spatial Tokens */
+  --gutter: clamp(1.25rem, 5vw, 5.5rem);
+  --ease-editorial: cubic-bezier(0.16, 1, 0.3, 1);
+}
