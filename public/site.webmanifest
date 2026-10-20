@@ -1,0 +1,17 @@
+{
+  "name": "Yash Gupta — Software Engineer & Full-Stack Builder",
+  "short_name": "Yash Gupta",
+  "description": "Editorial portfolio of Yash Gupta, Full-Stack Developer and B.Tech ECE undergraduate at BIT Mesra building AI-driven platforms and web architectures.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#050505",
+  "theme_color": "#050505",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

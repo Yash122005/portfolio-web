@@ -17,7 +17,9 @@ const ProjectSchematicPlate: React.FC<{ project: ProjectItem }> = ({ project }) 
       <div className="relative w-full h-full overflow-hidden bg-[#0A0A09]">
         <img
           src={project.imageUrl}
-          alt={`${project.title} interface preview`}
+          alt={`${project.title} — ${project.subtitle} interface preview`}
+          loading="lazy"
+          decoding="async"
           referrerPolicy="no-referrer"
           onError={() => setImgFailed(true)}
           className="w-full h-full object-cover object-top filter grayscale contrast-125 opacity-80 group-hover:scale-[1.02] group-hover:grayscale-0 transition-all duration-500"

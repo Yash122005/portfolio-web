@@ -104,7 +104,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
     >
       <div className="max-w-[1320px] mx-auto">
         <SectionHeading
-          chapter="04 / INITIATE DIALOGUE"
+          chapter="05 / INITIATE DIALOGUE"
           metaRight="INTERNSHIPS · FULL-STACK ROLES · COLLABORATIONS"
           title={
             <span id="contact-section-heading">

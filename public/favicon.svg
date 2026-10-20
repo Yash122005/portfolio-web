@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="yg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#141312"/>
+      <stop offset="100%" stop-color="#050505"/>
+    </linearGradient>
+    <linearGradient id="accent-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF9B66"/>
+      <stop offset="100%" stop-color="#FF8047"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="14" fill="url(#yg-grad)"/>
+  <rect width="64" height="64" rx="14" fill="none" stroke="#292724" stroke-width="2"/>
+  <text x="21" y="43" font-family="'Cormorant Garamond', Georgia, serif" font-size="34" font-weight="600" fill="#F1EEE7" text-anchor="middle">Y</text>
+  <text x="41" y="43" font-family="'Cormorant Garamond', Georgia, serif" font-size="34" font-weight="400" font-style="italic" fill="#F1EEE7" text-anchor="middle">G</text>
+  <circle cx="51" cy="41" r="3.2" fill="url(#accent-grad)"/>
+</svg>

@@ -63,6 +63,13 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
                 Capabilities &amp; Stack
               </a>
               <a
+                href="#faq"
+                onClick={(e) => handleNav(e, 'faq')}
+                className="hover:text-[#F1EEE7] transition-colors w-fit"
+              >
+                Knowledge Base &amp; FAQ
+              </a>
+              <a
                 href="#contact"
                 onClick={(e) => handleNav(e, 'contact')}
                 className="hover:text-[#F1EEE7] transition-colors w-fit"

@@ -1,0 +1,55 @@
+# Yash Gupta — Full-Stack Developer & Software Engineer
+
+> Yash Gupta is a Full-Stack Developer, Software Engineer, and B.Tech undergraduate in Electronics & Communication Engineering at Birla Institute of Technology (BIT), Mesra (Class of 2028). Specializing in React, Next.js, Node.js, TypeScript, PostgreSQL, and Generative AI pipelines with schema enforcement.
+
+## Canonical Resources
+- Canonical Website: https://www.yashbuild.tech/
+- Full Dossier: https://www.yashbuild.tech/llms-full.txt
+- GitHub: https://github.com/Yash122005
+- LinkedIn: https://www.linkedin.com/in/yash-gupta-8a8594283/
+- LeetCode: https://leetcode.com/u/Yash_Gupta1206/
+- Contact: yashvinodgupta6@gmail.com
+
+## Academic & Engineering Standing
+- Degree: B.Tech in Electronics & Communication Engineering (2024–2028)
+- Institution: Birla Institute of Technology (BIT), Mesra, Ranchi, India
+- CGPA: 8.18 / 10.0 (till 4th semester)
+- JEE Main: 97.2 Percentile
+- Algorithmic Problem Solving: 300+ problems solved on LeetCode (Dynamic Programming, Graphs, Trees)
+- Campus Leadership: Web Developer at Value Education Cell, BIT Mesra
+
+## Honors & Hackathon Wins
+- 1st Place Winner: SDS Hackathon (Hack & Forge 2026), BIT Mesra — Built InterviewIQ
+- 2nd Runner-Up: Ad-Venture (E-Summit 2026 flagship competition), EDC BIT Mesra
+
+## Flagship Systems & Projects
+- **InterviewIQ** (Live: https://ai-interviewer-eight-navy.vercel.app/ | Repo: https://github.com/Yash122005/AI_INTERVIEWER)
+  - AI technical assessment platform with real-time biometric and browser integrity telemetry (multi-face detection, window blur tracking, clipboard interception) and automated candidate scoring dossiers.
+  - Stack: React, Node.js, Express.js, MongoDB, ImageKit, AI APIs.
+- **HirePoint** (Live: https://hire-point-fs27.vercel.app/ | Repo: https://github.com/Yash122005/HirePoint)
+  - Role-isolated talent marketplace with multi-step onboarding, Clerk authentication, and Supabase PostgreSQL with row-level security (RLS).
+  - Stack: React, Supabase, PostgreSQL, Clerk, Tailwind CSS.
+- **Interview Prep Planner** (Live: https://resume-analyser1-85v2.vercel.app/ | Repo: https://github.com/Yash122005/Interview-Prep-Planner)
+  - GenAI resume analyzer and day-by-day roadmap engine using Google Gemini API with strict Zod schema enforcement for deterministic JSON outputs.
+  - Stack: React, Node.js, Express.js, MongoDB, Gemini API, Zod, JWT.
+- **Value Education Cell Platform — BIT Mesra** (Live: https://value-education-cell-bitm.vercel.app/ | Repo: https://github.com/Yash122005/Value-Education-Cell---BITM)
+  - Official digital campus archive and event platform combining Next.js static site generation with choreographed GSAP scroll motion.
+  - Stack: Next.js, TypeScript, React, Tailwind CSS, GSAP.
+- **Music Streaming REST Backend** (Docs: https://documenter.getpostman.com/view/46428929/2sBXwqqVsv | Repo: https://github.com/Yash122005/Spotify-backend-)
+  - Complete backend API with role-protected endpoints, media metadata pipelines, and published Postman specifications.
+  - Stack: Node.js, Express.js, MongoDB, REST API, Postman.
+- **Real-Time FX Exchange Utility** (Live: https://currency-convertor-tau-livid.vercel.app/ | Repo: https://github.com/Yash122005/Currency-Convertor/tree/main/src)
+  - High-precision live foreign-exchange rates calculator with custom React hooks and debounced input ergonomics.
+  - Stack: React, JavaScript, REST API, CSS3.
+
+## Technical Skills Summary
+- Frontend: React, Next.js, TypeScript, JavaScript (ES6+), Tailwind CSS, GSAP, Framer Motion, HTML5, CSS3, Redux Toolkit
+- Backend: Node.js, Express.js, PostgreSQL, MongoDB, Supabase, REST APIs, JWT, Clerk Auth, Zod Schema Validation
+- Languages: C, C++, Python, JavaScript, TypeScript, SQL
+- Embedded: ESP32, Arduino, Microcontroller C++
+- Tools: Git, GitHub, Docker, Postman, Figma, Vercel, Render
+
+## Availability & Contact
+- Open for: Software Engineering Internships, Full-Stack Developer Roles, and Web Architecture Contracts.
+- Email: yashvinodgupta6@gmail.com
+- Location: India (Ranchi / Azamgarh)

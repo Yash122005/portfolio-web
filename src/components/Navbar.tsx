@@ -13,6 +13,7 @@ const NAV_ITEMS = [
   { id: 'work', label: 'Work' },
   { id: 'about', label: 'About' },
   { id: 'skills', label: 'Skills' },
+  { id: 'faq', label: 'FAQ' },
   { id: 'contact', label: 'Contact' },
 ];
 

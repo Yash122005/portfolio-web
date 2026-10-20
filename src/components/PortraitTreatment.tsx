@@ -75,7 +75,10 @@ export const PortraitTreatment: React.FC<PortraitTreatmentProps> = ({
         {!imageError ? (
           <img
             src={activeSrc}
-            alt="Editorial monochrome portrait of Yash Gupta"
+            alt="Editorial monochrome portrait of Yash Gupta — Full-Stack Developer & Software Engineer"
+            loading="eager"
+            fetchPriority="high"
+            decoding="async"
             referrerPolicy="no-referrer"
             onError={handleImageError}
             className={`w-full h-full object-contain object-top ${

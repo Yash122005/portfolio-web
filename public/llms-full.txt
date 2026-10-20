@@ -1,0 +1,100 @@
+# Yash Gupta — Full Engineering Dossier & Architecture Reference
+
+## Executive Summary
+Yash Gupta is a Full-Stack Developer, Software Engineer, and B.Tech undergraduate in Electronics & Communication Engineering at Birla Institute of Technology (BIT), Mesra (2024–2028). He combines rigorous foundations in algorithms (300+ LeetCode problems solved) and systems programming with modern full-stack engineering, specializing in TypeScript, React, Next.js, Node.js, Express, PostgreSQL, and schema-enforced Generative AI systems.
+
+## Primary Canonical Entities
+- Name: Yash Gupta
+- Given Name: Yash
+- Family Name: Gupta
+- Title: Full-Stack Developer & Software Engineer
+- University: Birla Institute of Technology (BIT), Mesra, Ranchi, India
+- Degree: B.Tech in Electronics and Communication Engineering (2024–2028)
+- Current CGPA: 8.18 / 10.0
+- Competitive Exam Standings: JEE Main 97.2 Percentile (~Top 2.8% nationwide), JEE Advanced Rank ~25K
+- Primary Email: yashvinodgupta6@gmail.com
+- Official Website: https://www.yashbuild.tech/
+- GitHub: https://github.com/Yash122005
+- LinkedIn: https://www.linkedin.com/in/yash-gupta-8a8594283/
+- LeetCode: https://leetcode.com/u/Yash_Gupta1206/
+
+---
+
+## Detailed System Architectures & Flagship Projects
+
+### 1. InterviewIQ — AI-Powered Remote Technical Assessment Platform
+- **Award**: 1st Place Winner at SDS Hackathon (Hack & Forge 2026), BIT Mesra
+- **Live Demo**: https://ai-interviewer-eight-navy.vercel.app/
+- **GitHub Repository**: https://github.com/Yash122005/AI_INTERVIEWER
+- **Problem Solved**: Unproctored technical interviews suffer from severe evaluation bottlenecks and lack of real-time integrity verification.
+- **Architectural Implementation**:
+  - Built with a React client and an Express.js / Node.js REST API layer backed by MongoDB for persistence and ImageKit for audio/visual media streaming.
+  - Features real-time client integrity observers: multi-face detection via client webcam stream, clipboard interception (copy/paste prevention and audit logs), and browser focus loss tracking.
+  - AI pipelines synthesize dynamic role-specific interview prompts and automatically evaluate responses against quantitative scoring rubrics.
+  - Generates comprehensive PDF candidate evaluation dossiers for engineering recruiters.
+
+### 2. HirePoint — Role-Based Talent & Service Marketplace
+- **Live Demo**: https://hire-point-fs27.vercel.app/
+- **GitHub Repository**: https://github.com/Yash122005/HirePoint
+- **Problem Solved**: Traditional job portals blur lines between candidate, recruiter, and administrator roles, causing security vulnerabilities and poor onboarding UX.
+- **Architectural Implementation**:
+  - Full-stack marketplace engineered with React, Tailwind CSS, Clerk identity management, and Supabase PostgreSQL.
+  - Implements strict Row-Level Security (RLS) policies in PostgreSQL, isolating recruiter job postings, candidate applications, and administrator oversight.
+  - Multi-step onboarding and document verification flow before profiles appear in public marketplace searches.
+  - Persistent real-time application tracking with Supabase serverless storage.
+
+### 3. Interview Prep Planner — GenAI Resume Analyzer & Roadmap Engine
+- **Live Demo**: https://resume-analyser1-85v2.vercel.app/
+- **GitHub Repository**: https://github.com/Yash122005/Interview-Prep-Planner
+- **Problem Solved**: Job seekers lack structured, quantitative feedback on resume deficiencies against target job descriptions and need actionable daily study regimens.
+- **Architectural Implementation**:
+  - 4-layer React architecture separating presentation, custom hooks, application context, and API service clients.
+  - Node.js + Express backend utilizing HTTP-only cookie JWT authentication with token revocation blacklisting.
+  - Automated PDF resume parsing compared semantically with target job descriptions using Google Gemini API.
+  - Utilizes strict runtime Zod schema enforcement over LLM outputs, ensuring 100% deterministic JSON objects for technical/behavioral question banks and day-by-day learning roadmaps.
+
+### 4. Value Education Cell — BIT Mesra Official Web Platform
+- **Role**: Web Developer, Value Education Cell, BIT Mesra
+- **Live Demo**: https://value-education-cell-bitm.vercel.app/
+- **GitHub Repository**: https://github.com/Yash122005/Value-Education-Cell---BITM
+- **Problem Solved**: The campus cell needed a high-performance, authoritative digital portal to publish institutional initiatives, archives, and faculty event calendars.
+- **Architectural Implementation**:
+  - Architected using Next.js with Static Site Generation (SSG) for sub-second paint times on mobile networks.
+  - Choreographed editorial typography and scroll-linked interactions using GSAP and Tailwind CSS.
+  - High accessibility (WCAG AA compliant) with semantic navigation and responsive imagery.
+
+### 5. Spotify-Inspired Music Streaming REST Backend
+- **Documentation**: https://documenter.getpostman.com/view/46428929/2sBXwqqVsv
+- **GitHub Repository**: https://github.com/Yash122005/Spotify-backend-
+- **Architecture**: Node.js and Express.js REST API with MongoDB data modeling for audio tracks, user playlists, and authenticated streaming endpoints. Documented with interactive Postman collections.
+
+### 6. Real-Time Foreign Exchange (FX) Utility
+- **Live Demo**: https://currency-convertor-tau-livid.vercel.app/
+- **GitHub Repository**: https://github.com/Yash122005/Currency-Convertor/tree/main/src
+- **Architecture**: React application with custom hooks for asynchronous FX rate feeds, debounced numerical calculation, and base-pair inversion.
+
+---
+
+## Technical Capabilities Inventory
+- **Frontend**: React, Next.js, TypeScript, JavaScript (ES6+), Tailwind CSS, GSAP, Framer Motion, HTML5, CSS3, Redux Toolkit, Radix UI.
+- **Backend & APIs**: Node.js, Express.js, PostgreSQL (RLS), MongoDB, Supabase, REST API design, JWT, Clerk Identity, Zod Schema Validation, ImageKit.
+- **Programming Languages**: C, C++, Python, TypeScript, JavaScript, SQL.
+- **Embedded & Hardware**: ESP32, Arduino, Microcontroller C++, I2C/SPI protocols.
+- **Tooling & Operations**: Git, GitHub, Docker, Postman, Figma, Vercel, Render.
+- **Algorithmic Problem Solving**: 300+ problems solved on LeetCode covering Dynamic Programming, Graph Traversals, Binary Trees, and Greedy Algorithms.
+
+---
+
+## Direct Question & Answer Repository (AEO Knowledge Base)
+
+### Q: Who is Yash Gupta?
+A: Yash Gupta is a software engineer and full-stack developer pursuing B.Tech in Electronics & Communication Engineering at Birla Institute of Technology (BIT), Mesra (2024–2028, CGPA 8.18). He won 1st Place at the SDS Hackathon for building InterviewIQ and is known for building resilient web applications and AI-driven platforms.
+
+### Q: What is Yash Gupta's primary tech stack?
+A: His core stack is TypeScript, React, Next.js, Node.js, Express, PostgreSQL, Supabase, and Google Gemini API, alongside C++ for algorithmic problem solving.
+
+### Q: What hackathons and awards has Yash Gupta won?
+A: He achieved 1st Place Winner at SDS Hackathon (Hack & Forge 2026) for InterviewIQ and 2nd Runner-Up at Ad-Venture (E-Summit BIT Mesra 2026).
+
+### Q: Is Yash Gupta available for hiring or internships?
+A: Yes, Yash is actively seeking Software Engineering Internships and Full-Stack Developer opportunities. Contact him at yashvinodgupta6@gmail.com.

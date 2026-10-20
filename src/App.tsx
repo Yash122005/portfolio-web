@@ -11,6 +11,7 @@ import { TextScrambleSection } from './sections/TextScrambleSection';
 import { ProjectsSection } from './sections/ProjectsSection';
 import { AboutSection } from './sections/AboutSection';
 import { SkillsSection } from './sections/SkillsSection';
+import { FAQSection } from './sections/FAQSection';
 import { ContactSection } from './sections/ContactSection';
 import { Footer } from './components/Footer';
 import { MotionToggle } from './components/MotionToggle';
@@ -67,7 +68,7 @@ export default function App() {
   );
 
   useEffect(() => {
-    const sectionIds = ['top', 'work', 'about', 'skills', 'contact'];
+    const sectionIds = ['top', 'work', 'about', 'skills', 'faq', 'contact'];
     const handleScroll = () => {
       const scrollPosition = window.scrollY + 220;
       if (window.scrollY < 180) {
@@ -124,6 +125,8 @@ export default function App() {
         />
 
         <SkillsSection motionEnabled={motionEnabled} />
+
+        <FAQSection motionEnabled={motionEnabled} />
 
         <ContactSection motionEnabled={motionEnabled} />
       </main>
