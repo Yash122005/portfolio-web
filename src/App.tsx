@@ -90,7 +90,7 @@ export default function App() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-[#050505] text-[#F1EEE7] selection:bg-[#FF8047] selection:text-[#050505]">
+    <div className="min-h-screen bg-[#050505] text-[#F1EEE7] selection:bg-[#FF8047] selection:text-[#050505] overflow-x-hidden max-w-full w-full">
       {/* Accessible Skip Link */}
       <a
         href="#main-content"

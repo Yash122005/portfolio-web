@@ -3,8 +3,8 @@
 > Yash Gupta is a Full-Stack Developer, Software Engineer, and B.Tech undergraduate in Electronics & Communication Engineering at Birla Institute of Technology (BIT), Mesra (Class of 2028). Specializing in React, Next.js, Node.js, TypeScript, PostgreSQL, and Generative AI pipelines with schema enforcement.
 
 ## Canonical Resources
-- Canonical Website: https://www.yashbuild.tech/
-- Full Dossier: https://www.yashbuild.tech/llms-full.txt
+- Canonical Website: https://yashgupta.website/
+- Full Dossier: https://yashgupta.website/llms-full.txt
 - GitHub: https://github.com/Yash122005
 - LinkedIn: https://www.linkedin.com/in/yash-gupta-8a8594283/
 - LeetCode: https://leetcode.com/u/Yash_Gupta1206/

@@ -22,7 +22,7 @@ export const OWNER_PROFILE = {
   defaultPortraitPath: '/images/yash-portrait.webp',
   fallbackPortraitPath: '/images/yash-portrait.png',
   resumeUrl: 'https://drive.google.com/file/d/1WZaYpbm0SQVhPN-S4k4ihizEh8WqHaxi/view?usp=sharing',
-  existingPortfolioUrl: 'https://www.yashbuild.tech/',
+  existingPortfolioUrl: 'https://yashgupta.website/',
 };
 
 export const SOCIAL_LINKS: SocialLinkItem[] = [

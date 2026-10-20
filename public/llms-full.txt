@@ -13,7 +13,7 @@ Yash Gupta is a Full-Stack Developer, Software Engineer, and B.Tech undergraduat
 - Current CGPA: 8.18 / 10.0
 - Competitive Exam Standings: JEE Main 97.2 Percentile (~Top 2.8% nationwide), JEE Advanced Rank ~25K
 - Primary Email: yashvinodgupta6@gmail.com
-- Official Website: https://www.yashbuild.tech/
+- Official Website: https://yashgupta.website/
 - GitHub: https://github.com/Yash122005
 - LinkedIn: https://www.linkedin.com/in/yash-gupta-8a8594283/
 - LeetCode: https://leetcode.com/u/Yash_Gupta1206/

@@ -44,10 +44,10 @@ export const Navbar: React.FC<NavbarProps> = ({
       initial={motionEnabled ? { opacity: 0, y: -14 } : false}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.65, delay: 0.08, ease: [0.16, 1, 0.3, 1] }}
-      className="fixed top-3 md:top-4 left-3 right-3 sm:left-6 sm:right-6 z-40 mx-auto max-w-[1180px]"
+      className="fixed top-2.5 sm:top-3 md:top-4 inset-x-0 z-40 mx-auto px-3 sm:px-6 max-w-[1180px] w-full pointer-events-none"
     >
       <div
-        className={`flex items-center justify-between gap-4 md:gap-8 h-[60px] md:h-[68px] px-4 sm:px-6 md:px-7 rounded-[20px] border transition-colors duration-300 ${
+        className={`pointer-events-auto flex items-center justify-between gap-3 sm:gap-6 md:gap-8 h-[52px] sm:h-[60px] md:h-[68px] px-3.5 sm:px-6 md:px-7 rounded-[15px] sm:rounded-[20px] border transition-colors duration-300 ${
           scrolled
             ? 'bg-[#0C0B0AE6] border-[#F1EEE7]/15 shadow-[0_14px_40px_rgba(0,0,0,0.65)]'
             : 'bg-[#100F0EC4] border-[#F1EEE7]/12 shadow-[0_10px_30px_rgba(0,0,0,0.45)]'
@@ -57,7 +57,7 @@ export const Navbar: React.FC<NavbarProps> = ({
         <a
           href="#top"
           onClick={(e) => handleLinkClick(e, 'top')}
-          className="font-serif-editorial text-[24px] md:text-[27px] font-medium tracking-[-0.02em] text-[#F1EEE7] hover:text-[#FF8047] transition-colors whitespace-nowrap shrink-0"
+          className="font-serif-editorial text-[21px] sm:text-[24px] md:text-[27px] font-medium tracking-[-0.02em] text-[#F1EEE7] hover:text-[#FF8047] transition-colors whitespace-nowrap shrink-0"
         >
           {OWNER_PROFILE.name}
         </a>
@@ -93,7 +93,7 @@ export const Navbar: React.FC<NavbarProps> = ({
         </nav>
 
         {/* Zone 3: Primary Action + Mobile Trigger */}
-        <div className="flex items-center gap-2.5 shrink-0">
+        <div className="flex items-center gap-2 sm:gap-2.5 shrink-0">
           <a
             href="#contact"
             onClick={(e) => handleLinkClick(e, 'contact')}
@@ -109,10 +109,10 @@ export const Navbar: React.FC<NavbarProps> = ({
             aria-expanded={mobileMenuOpen}
             aria-controls="mobile-editorial-nav"
             aria-label={mobileMenuOpen ? 'Close navigation menu' : 'Open navigation menu'}
-            className="md:hidden inline-flex items-center gap-2 px-3 py-2 rounded-[10px] text-[11px] font-mono-editorial uppercase tracking-[0.1em] text-[#F1EEE7] border border-[#F1EEE7]/15 bg-[#151413]/80 hover:border-[#FF8047]/60 transition-colors whitespace-nowrap shrink-0"
+            className="md:hidden inline-flex items-center gap-1.5 px-2.5 py-1.5 rounded-[8px] text-[11px] font-mono-editorial uppercase tracking-[0.08em] text-[#F1EEE7] border border-[#F1EEE7]/15 bg-[#151413]/85 hover:border-[#FF8047]/60 active:scale-95 transition-all whitespace-nowrap shrink-0"
           >
             <span>{mobileMenuOpen ? 'Close' : 'Menu'}</span>
-            {mobileMenuOpen ? <X className="w-4 h-4" /> : <Menu className="w-4 h-4" />}
+            {mobileMenuOpen ? <X className="w-3.5 h-3.5" /> : <Menu className="w-3.5 h-3.5" />}
           </button>
         </div>
       </div>
@@ -127,7 +127,7 @@ export const Navbar: React.FC<NavbarProps> = ({
             animate={{ opacity: 1, y: 0 }}
             exit={motionEnabled ? { opacity: 0, y: -8 } : undefined}
             transition={{ duration: 0.2, ease: [0.16, 1, 0.3, 1] }}
-            className="md:hidden mt-2 p-5 rounded-[18px] bg-[#0E0D0CF5] border border-[#F1EEE7]/15 backdrop-blur-2xl shadow-[0_20px_50px_rgba(0,0,0,0.85)]"
+            className="pointer-events-auto md:hidden mt-2 p-4 sm:p-5 rounded-[16px] sm:rounded-[18px] bg-[#0E0D0CF8] border border-[#F1EEE7]/15 backdrop-blur-2xl shadow-[0_20px_50px_rgba(0,0,0,0.85)] max-h-[calc(100svh-80px)] overflow-y-auto"
           >
             <div className="flex flex-col divide-y divide-[#292724]">
               {NAV_ITEMS.map((item) => (
@@ -135,18 +135,18 @@ export const Navbar: React.FC<NavbarProps> = ({
                   key={item.id}
                   href={`#${item.id}`}
                   onClick={(e) => handleLinkClick(e, item.id)}
-                  className="flex items-center justify-between py-3.5 font-serif-editorial text-[26px] text-[#F1EEE7] hover:text-[#FF8047] transition-colors"
+                  className="flex items-center justify-between py-3 font-serif-editorial text-[22px] sm:text-[26px] text-[#F1EEE7] hover:text-[#FF8047] transition-colors"
                 >
                   <span>{item.label}</span>
                   <ArrowUpRight className="w-4 h-4 text-[#FF8047]" />
                 </a>
               ))}
             </div>
-            <div className="pt-4 mt-2 border-t border-[#292724]">
+            <div className="pt-3.5 mt-2 border-t border-[#292724]">
               <a
                 href="#contact"
                 onClick={(e) => handleLinkClick(e, 'contact')}
-                className="flex items-center justify-between w-full px-4 py-3 rounded-[12px] text-[13px] font-medium bg-[#FF8047] text-[#050505] hover:bg-[#ff9261] transition-colors"
+                className="flex items-center justify-between w-full px-4 py-2.5 sm:py-3 rounded-[11px] text-[13px] font-medium bg-[#FF8047] text-[#050505] hover:bg-[#ff9261] transition-colors"
               >
                 <span>Let&apos;s talk</span>
                 <ArrowUpRight className="w-4 h-4" />

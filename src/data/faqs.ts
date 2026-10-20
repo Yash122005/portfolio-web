@@ -124,18 +124,18 @@ export const FAQS: FAQItem[] = [
     category: 'VERIFIED PROFILES',
     question: 'Where can I inspect Yash Gupta’s source code, verified profiles, and live applications?',
     shortAnswer:
-      'All source code and live platforms are publicly verifiable on GitHub (@Yash122005), LinkedIn, LeetCode (@Yash_Gupta1206), and his official portfolio (yashbuild.tech).',
+      'All source code and live platforms are publicly verifiable on GitHub (@Yash122005), LinkedIn, LeetCode (@Yash_Gupta1206), and his official portfolio (yashgupta.website).',
     detailedAnswer: [
       'GitHub: https://github.com/Yash122005 — 30+ public repositories featuring full-stack applications, API specifications, and open-source contributions.',
       'LinkedIn: https://www.linkedin.com/in/yash-gupta-8a8594283/ — Verified professional background, hackathon recognitions, and updates.',
       'LeetCode: https://leetcode.com/u/Yash_Gupta1206/ — Public record of 300+ solved data structures and algorithmic challenges.',
-      'Official Portfolio: https://www.yashbuild.tech/ — Live case studies, architecture schematics, and interactive project demos.',
+      'Official Portfolio: https://yashgupta.website/ — Live case studies, architecture schematics, and interactive project demos.',
     ],
     keywords: [
       'GitHub Yash122005',
       'LinkedIn Yash Gupta',
       'LeetCode Yash_Gupta1206',
-      'yashbuild.tech',
+      'yashgupta.website',
     ],
   },
 ];

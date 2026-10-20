@@ -2,37 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
-    <loc>https://www.yashbuild.tech/</loc>
+    <loc>https://yashgupta.website/</loc>
     <lastmod>2026-10-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>
-      <image:loc>https://www.yashbuild.tech/images/yash-portrait.webp</image:loc>
+      <image:loc>https://yashgupta.website/images/yash-portrait.webp</image:loc>
       <image:title>Yash Gupta — Software Engineer and Full-Stack Builder</image:title>
       <image:caption>Editorial portrait of Yash Gupta, Full-Stack Developer &amp; B.Tech ECE undergraduate at BIT Mesra</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://www.yashbuild.tech/images/project-ai-interviewer.png</image:loc>
+      <image:loc>https://yashgupta.website/images/project-ai-interviewer.png</image:loc>
       <image:title>InterviewIQ — AI Technical Assessment Platform</image:title>
       <image:caption>1st Place Winner at SDS Hackathon Hack &amp; Forge 2026</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://www.yashbuild.tech/images/project-hirepoint.png</image:loc>
+      <image:loc>https://yashgupta.website/images/project-hirepoint.png</image:loc>
       <image:title>HirePoint — Role-Based Talent &amp; Service Marketplace</image:title>
       <image:caption>Multi-tenant hiring portal with PostgreSQL and Clerk authentication</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://www.yashbuild.tech/images/project-resume-analyser.png</image:loc>
+      <image:loc>https://yashgupta.website/images/project-resume-analyser.png</image:loc>
       <image:title>Interview Prep Planner — GenAI Resume Analyzer &amp; Roadmap Engine</image:title>
       <image:caption>Deterministic Zod-validated Gemini API resume roadmap engine</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://www.yashbuild.tech/images/project-vec-bitm.png</image:loc>
+      <image:loc>https://yashgupta.website/images/project-vec-bitm.png</image:loc>
       <image:title>Value Education Cell — Official BIT Mesra Platform</image:title>
       <image:caption>Official institutional website architected with Next.js and GSAP</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://www.yashbuild.tech/images/project-currency.png</image:loc>
+      <image:loc>https://yashgupta.website/images/project-currency.png</image:loc>
       <image:title>Real-Time FX Exchange Utility</image:title>
       <image:caption>Live currency conversion application</image:caption>
     </image:image>
