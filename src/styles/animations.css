@@ -127,6 +127,84 @@
   }
 }
 
+/* Premium Shimmer / Shine Sweep hover effect for project images & cards */
+.project-shine-sweep {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.project-shine-sweep::after {
+  content: '';
+  position: absolute;
+  top: -25%;
+  left: -25%;
+  width: 150%;
+  height: 150%;
+  pointer-events: none;
+  z-index: 15;
+  background: linear-gradient(
+    135deg,
+    transparent 0%,
+    transparent 38%,
+    rgba(255, 255, 255, 0.03) 44%,
+    rgba(255, 255, 255, 0.14) 47%,
+    rgba(255, 255, 255, 0.32) 50%,
+    rgba(255, 255, 255, 0.14) 53%,
+    rgba(255, 255, 255, 0.03) 56%,
+    transparent 62%,
+    transparent 100%
+  );
+  transform: translateX(-150%);
+  opacity: 0;
+  will-change: transform, opacity;
+}
+
+@keyframes project-shine-sweep-card {
+  0% {
+    transform: translateX(-150%);
+    opacity: 0;
+  }
+  15% {
+    opacity: 1;
+  }
+  85% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(150%);
+    opacity: 0;
+  }
+}
+
+@keyframes project-shine-sweep-plate {
+  0% {
+    transform: translateX(-150%);
+    opacity: 0;
+  }
+  15% {
+    opacity: 1;
+  }
+  85% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(150%);
+    opacity: 0;
+  }
+}
+
+@media (hover: hover) and (prefers-reduced-motion: no-preference) {
+  html:not([data-motion='off']) .group:hover .project-shine-sweep::after {
+    animation: project-shine-sweep-card 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  }
+
+  html:not([data-motion='off']) .project-shine-sweep:hover::after,
+  html:not([data-motion='off']) .group\/plate:hover .project-shine-sweep::after {
+    animation: project-shine-sweep-plate 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  }
+}
+
 /* Scroll line indicator animation */
 @keyframes scroll-pulse {
   0%,

@@ -14,7 +14,7 @@ const ProjectSchematicPlate: React.FC<{ project: ProjectItem }> = ({ project }) 
 
   if (project.imageUrl && !imgFailed) {
     return (
-      <div className="relative w-full h-full overflow-hidden bg-[#0A0A09]">
+      <div className="relative w-full aspect-[16/9] sm:aspect-[16/10] lg:aspect-auto sm:min-h-[320px] lg:min-h-[340px] lg:h-full overflow-hidden bg-[#0A0A09] project-shine-sweep flex items-center justify-center">
         <img
           src={project.imageUrl}
           alt={`${project.title} — ${project.subtitle} interface preview`}
@@ -22,15 +22,15 @@ const ProjectSchematicPlate: React.FC<{ project: ProjectItem }> = ({ project }) 
           decoding="async"
           referrerPolicy="no-referrer"
           onError={() => setImgFailed(true)}
-          className="w-full h-full object-cover object-top filter grayscale contrast-125 opacity-80 group-hover:scale-[1.02] group-hover:grayscale-0 transition-all duration-500"
+          className="w-full h-full object-cover object-center transition-transform duration-700 ease-out group-hover:scale-[1.03] group-hover/plate:scale-[1.03]"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#050505] via-[#050505]/30 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#050505]/40 via-transparent to-transparent pointer-events-none" />
       </div>
     );
   }
 
   return (
-    <div className="relative w-full h-full overflow-hidden bg-[#0A0908] flex flex-col justify-between p-6 sm:p-8">
+    <div className="relative w-full min-h-[260px] sm:min-h-[340px] h-full overflow-hidden bg-[#0A0908] flex flex-col justify-between p-6 sm:p-8 project-shine-sweep">
       {/* Subtle architectural background grid */}
       <div
         aria-hidden="true"
@@ -231,7 +231,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
           type="button"
           onClick={() => onInspect(project)}
           aria-label={`Inspect architecture and case study for ${project.title}`}
-          className="w-full min-h-[280px] sm:min-h-[340px] rounded-[16px] border border-[#292724] group-hover:border-[#FF8047]/55 overflow-hidden text-left transition-colors duration-300 relative"
+          className="w-full h-full rounded-[16px] border border-[#292724] group-hover:border-[#FF8047]/55 overflow-hidden text-left transition-colors duration-300 relative group/plate flex flex-col"
         >
           <ProjectSchematicPlate project={project} />
         </button>
